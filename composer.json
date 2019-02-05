@@ -6,6 +6,13 @@
         "framework",
         "laravel"
     ],
+    "authors": [
+        {
+            "name": "duncte123",
+            "homepage": "https://duncte123.me",
+            "role": "Wrote this homework assignment"
+        }
+    ],
     "license": "MIT",
     "require": {
         "php": "^7.1.3",
