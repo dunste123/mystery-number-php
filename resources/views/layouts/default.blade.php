@@ -78,8 +78,11 @@
         }
 
         return document.querySelectorAll(search);
+    };
+
+    function updateDisplay(el) {
+        _(el.dataset.display).value = el.value;
     }
 </script>
-@yield('scripts')
 </body>
 </html>

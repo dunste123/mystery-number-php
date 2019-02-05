@@ -50,11 +50,3 @@
     </div>
 
 @endsection
-
-@section('scripts')
-    <script>
-        function updateDisplay(el) {
-            _(el.dataset.display).value = el.value;
-        }
-    </script>
-@endsection
