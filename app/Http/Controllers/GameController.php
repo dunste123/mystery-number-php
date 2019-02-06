@@ -76,7 +76,7 @@ class GameController extends Controller
         }
 
         $validated = $request->validate([
-            'guess' => 'required|numeric|min:10|max:500',
+            'guess' => 'required|numeric|min:1|max:500',
         ]);
 
         $num = $s->get('number');
@@ -136,5 +136,13 @@ class GameController extends Controller
             'guesses' => $guessesList,
             'guessed' => $guessed,
         ]);
+    }
+
+    public function reset()
+    {
+        $s = session();
+        $s->put('is_playing', false);
+
+        return redirect(route('game.main'));
     }
 }

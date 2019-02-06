@@ -33,6 +33,7 @@
                     <hr/>
 
                     <button type="submit" class="btn btn-success w-100">Make guess</button>
+                    <a role="button" class="btn btn-danger w-100" href="{{ route('game.reset') }}">Reset game</a>
                     @csrf
                 </form>
 

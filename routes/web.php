@@ -23,4 +23,6 @@ Route::group(['prefix' => '/game', 'as' => 'game.'], function() {
     Route::post('/guess', ['uses' => 'GameController@guessNumber', 'as' => 'guess']);
 
     Route::get('/results', ['uses' => 'GameController@results', 'as' => 'results']);
+
+    Route::get('/reset', ['uses' => 'GameController@reset', 'as' => 'reset']);
 });
