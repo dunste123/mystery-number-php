@@ -36,7 +36,7 @@ class GameController extends Controller
         return redirect(route('game.play'));
     }
 
-    public function playGame(Request $request)
+    public function playGame()
     {
         $s = session();
 
